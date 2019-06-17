@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <title>Editar Calendário de Avaliação</title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <title>BEM VINDO PROFESSOR(A) {{nome}}</title>
+  <ion-label>MATÉRIA</ion-label>
+  <ion-input [(ngModel)]="materia"></ion-input>
+
+<title> Deseja editar o calendário de qual sala?</title>
+  <ion-radio color="primary" name="1a" value="1a"> 1 Agroindústria</ion-radio>
+  <ion-radio color="secondary" name="2a" value="2a">2 Agroindústria</ion-radio>
+  <ion-radio color="light" name="3a" value="3a"> 3 Agroindústria</ion-radio>
+  <ion-radio color="dark" name="4a" value="4a">4 Agroindústria</ion-radio>
+  <!--exemplo, o objetivo é que só apareça as salas que o professor cadastrou-->
+
+
+    <ion-button href="calendarioprof">Entrar</ion-button>
+</ion-content>

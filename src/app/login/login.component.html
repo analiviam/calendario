@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <title>Fazer Login </title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+ <ion-label>nome:</ion-label>
+ <ion-input [(ngModel)]= "nome"></ion-input>
+ <br>
+ <ion-label >senha:</ion-label>
+ <ion-input [(ngModel)]= "senha"></ion-input>
+ <br>
+ <ion-button color="danger" href="registrar">Entrar como professor</ion-button>
+ <ion-button color="danger" href="calendarioaluno">Entrar como aluno</ion-button>
+ <br>
+ <p>Ainda não é cadastrado? Cadastre-se:</p>
+ <br>
+ <ion-button href="cadastroaluno" color="success">Cadastrar como aluno</ion-button>
+ <br>
+ <ion-button href="cadastroprof" color="success">Cadastrar como professor</ion-button>
+</ion-content>
+<ion-footer></ion-footer>

@@ -1,20 +1,32 @@
 <ion-header>
   <ion-toolbar>
-    <title>Editar Calendário de Avaliação</title>
+    <ion-title>Editar Calendário de Avaliação </ion-title>
   </ion-toolbar>
 </ion-header>
 <ion-content>
-  <title>BEM VINDO PROFESSOR(A) {{nome}}</title>
-  <ion-label>MATÉRIA</ion-label>
-  <ion-input [(ngModel)]="materia"></ion-input>
+  <h5>BEM VINDO PROFESSOR(A) {{professor.nome}}</h5>
+<ion-item>
+  <ion-label>MATÉRIA:</ion-label>
+  <ion-input [(ngModel)]="materia" position="floating"></ion-input>
+  </ion-item>
 
-<title> Deseja editar o calendário de qual sala?</title>
-  <ion-radio color="primary" name="1a" value="1a"> 1 Agroindústria</ion-radio>
-  <ion-radio color="secondary" name="2a" value="2a">2 Agroindústria</ion-radio>
-  <ion-radio color="light" name="3a" value="3a"> 3 Agroindústria</ion-radio>
-  <ion-radio color="dark" name="4a" value="4a">4 Agroindústria</ion-radio>
+<h5> Deseja editar o calendário de qual sala?</h5>
+
+  <ion-radio color="primary" name="1a" value="1a"> </ion-radio>
+  <ion-label> 1 Agroindustria</ion-label>
+  <br>
+  <ion-radio color="secondary" name="2a" value="2a"> </ion-radio>
+  <ion-label> 2 Agroindustria</ion-label>
+  <br>
+  <ion-radio color="light" name="3a" value="3a"> </ion-radio>
+  <ion-label> 3 Agroindustria</ion-label>
+  <br>
+  <ion-radio color="dark" name="4a" value="4a"> </ion-radio>
+  <ion-label> 2 Agroindustria</ion-label>
   <!--exemplo, o objetivo é que só apareça as salas que o professor cadastrou-->
 
-
+ <ion-item>
     <ion-button href="calendarioprof">Entrar</ion-button>
+    <ion-button href="login" color="danger">Sair</ion-button>
+    </ion-item>
 </ion-content>

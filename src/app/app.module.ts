@@ -11,18 +11,22 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { LoginComponent } from './login/login.component';
-import { CadastroalunoComponent } from './cadastroaluno/salvar-aluno/cadastroaluno.component';
-import { CadastroprofComponent} from './cadastroprof/cadastroprof.component';
+import { CadastroalunoComponent } from './cadastroaluno/salvar_aluno/cadastroaluno.component';
+import { CadastroprofComponent} from './cadastroprof/salvarprof/cadastroprof.component';
 import {RegistrarComponent} from './registrar/registrar.component';
 import {CalendarioprofComponent} from './calendarioprof/calendarioprof.component';
 import {CalendarioalunoComponent} from './calendarioaluno/calendarioaluno.component';
+import { AlunoListarComponent} from './cadastroaluno/listar_aluno/listar.component';
+import { ProfessorListarComponent} from './cadastroprof/listar_prof/listar.component';
 
 import {AngularFireModule} from '@angular/fire';
 import { AngularFireDatabaseModule} from '@angular/fire/database';
 
 @NgModule({
   declarations: [AppComponent, LoginComponent, CadastroalunoComponent,
-    CadastroprofComponent, RegistrarComponent, CalendarioprofComponent, CalendarioalunoComponent],
+    CadastroprofComponent, RegistrarComponent, CalendarioprofComponent, CalendarioalunoComponent,
+AlunoListarComponent, ProfessorListarComponent
+  ],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, FormsModule,
 AngularFireDatabaseModule, AngularFireModule.initializeApp({

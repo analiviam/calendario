@@ -18,5 +18,5 @@ export class CadastroalunoComponent implements OnInit {
   salvar(){
     this.banco.list('aluno').push(this.aluno);
     this.aluno=new Aluno();
-    alert('agora vai');}
+    alert('cadastrado com sucesso');}
 }

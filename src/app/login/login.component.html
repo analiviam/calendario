@@ -1,14 +1,18 @@
 <ion-header>
-  <ion-toolbar>
-    <title>Fazer Login </title>
+  <ion-toolbar color="danger">
+    <ion-title>Fazer Login </ion-title>
   </ion-toolbar>
 </ion-header>
 <ion-content>
+  <ion-item>
  <ion-label>nome:</ion-label>
- <ion-input [(ngModel)]= "nome"></ion-input>
+ <ion-input [(ngModel)]= "nome" position="floating"></ion-input>
+</ion-item>
  <br>
+<ion-item>
  <ion-label >senha:</ion-label>
- <ion-input [(ngModel)]= "senha"></ion-input>
+ <ion-input [(ngModel)]= "senha" position="floating"></ion-input>
+</ion-item>
  <br>
  <ion-button color="danger" href="registrar">Entrar como professor</ion-button>
  <ion-button color="danger" href="calendarioaluno">Entrar como aluno</ion-button>

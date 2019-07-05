@@ -4,5 +4,5 @@ import { Component } from '@angular/core';
   templateUrl : 'calendarioprof.component.html'
 })
 export class CalendarioprofComponent{
-   conteudo: String;
+   conteudo: string;
 }

@@ -7,8 +7,7 @@
 </ion-header>
 
 <ion-content>
-  <img src="https://followthecolours.com.br/wp-content/uploads/2019/01/follow-the-colours-calendario-2019-ftc.png">
-<p> Bem-vindo ao calendário escolar, para entrar faça o login </p>
-
-  <ion-button href="login"> Login </ion-button>
+  <ion-input type="text" name="email" [(ngModel)]="aluno.email"></ion-input>
+  <ion-input type="password" name="senha" [(ngModel)]="aluno.senha"></ion-input>
+  <ion-button (click)="logar()">Acessar</ion-button>
 </ion-content>
